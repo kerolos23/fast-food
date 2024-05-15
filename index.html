@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Fast Food</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="py-4">
+      <div
+        class="nav-contianer m-auto d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand d-flex">
+          <a class="navbar-brand text-dark" href="#">
+            <h1>logo</h1>
+          </a>
+        </div>
+
+        <div class="burger-icon flex-column position-relative">
+          <div class="icon active open">
+            <i class="fa-solid fa-burger"></i>
+          </div>
+
+          <div class="icon close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+        <div class="nav-bar d-flex gap-4 align-items-center">
+          <ul class="d-flex gap-4">
+            <li class="position-relative">
+              <a href="#menu" class="links">Menu</a>
+            </li>
+            <li class="position-relative">
+              <a href="#about" class="links">About</a>
+            </li>
+            <li class="position-relative">
+              <a href="#items" class="links">Items</a>
+            </li>
+            <li class="position-relative">
+              <a href="#contact" class="links">Contact</a>
+            </li>
+          </ul>
+
+          <div class="icons d-flex gap-3">
+            <button class="button">ORDER NOW</button>
+            <button class="button">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container position-relative">
+        <div class="img">
+          <img src="images/hero.jpg" alt="Hero Image" />
+        </div>
+
+        <div
+          class="info position-absolute d-flex gap-5 justify-content-center flex-column align-items-start"
+        >
+          <div class="title">
+            <h3>Today's Best Deal</h3>
+            <h1>Delicious</h1>
+            <h1>Fast</h1>
+            <h1>Food</h1>
+          </div>
+
+          <button class="button">ORDER NOW</button>
+        </div>
+
+        <div class="offer position-absolute">
+          <img src="images/offer.png" alt="Offer" />
+        </div>
+
+        <div class="chilli position-absolute">
+          <img src="images/chilli.png" alt="Chilli" />
+        </div>
+
+        <div class="chilli-2 position-absolute">
+          <img src="images/chilli-2.png" alt="Chilli" />
+        </div>
+
+        <div class="chilli-3 position-absolute">
+          <img src="images/chilli-3.png" alt="Chilli" />
+        </div>
+
+        <div class="wave position-absolute">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#fff"
+              fill-opacity="1"
+              d="M0,320L80,309.3C160,299,320,277,480,277.3C640,277,800,299,960,282.7C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services my-5">
+      <div
+        class="services-container d-flex flex-column gap-5 align-items-center m-auto"
+      >
+        <div class="sec-titles">
+          <h1>Our Services</h1>
+        </div>
+
+        <div class="services d-flex justify-content-center flex-wrap w-100">
+          <div class="service d-flex flex-column align-items-center gap-3">
+            <div class="icon">
+              <i class="fa-solid fa-shop"></i>
+            </div>
+            <div class="text-bx">
+              <h2>Easy To Order</h2>
+            </div>
+          </div>
+
+          <div class="service d-flex flex-column align-items-center gap-3">
+            <div class="icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="text-bx">
+              <h2>Fast Delivery</h2>
+            </div>
+          </div>
+
+          <div class="service d-flex flex-column align-items-center gap-3">
+            <div class="icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="text-bx">
+              <h2>Pick Up</h2>
+            </div>
+          </div>
+
+          <div class="service d-flex flex-column align-items-center gap-3">
+            <div class="icon">
+              <i class="fa-solid fa-kitchen-set"></i>
+            </div>
+            <div class="text-bx">
+              <h2>Best Quality</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+      <div
+        class="menu-container d-flex flex-column gap-5 align-items-center m-auto"
+      >
+        <div class="sec-titles">
+          <h1>Our Menu</h1>
+        </div>
+
+        <div
+          class="items d-flex gap-5 align-items-center justify-content-center flex-wrap"
+        >
+          <div
+            class="item d-flex flex-column text-center gap-3 align-items-center"
+          >
+            <div class="img">
+              <img src="images/beef-burger.jpg" alt="Beef Burger" />
+            </div>
+
+            <div class="text-bx">
+              <h2 class="position-relative">Beef Burger</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                quam.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column text-center gap-3 align-items-center"
+          >
+            <div class="img">
+              <img src="images/burrito.png" alt="Burrito" />
+            </div>
+
+            <div class="text-bx">
+              <h2 class="position-relative">Burrito Food</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                quam.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column text-center gap-3 align-items-center"
+          >
+            <div class="img">
+              <img src="images/chicken-burger.jpg" alt="Chicken Burger" />
+            </div>
+
+            <div class="text-bx">
+              <h2 class="position-relative">Chicken Burger</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                quam.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column text-center gap-3 align-items-center"
+          >
+            <div class="img">
+              <img src="images/fries.png" alt="French Fries" />
+            </div>
+
+            <div class="text-bx">
+              <h2 class="position-relative">French Fries</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                quam.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column text-center gap-3 align-items-center"
+          >
+            <div class="img">
+              <img src="images/desserts.jpg" alt="Desserts" />
+            </div>
+
+            <div class="text-bx">
+              <h2 class="position-relative">Desserts</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                quam.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column text-center gap-3 align-items-center"
+          >
+            <div class="img">
+              <img src="images/pizza.png" alt="Pizza" />
+            </div>
+
+            <div class="text-bx">
+              <h2 class="position-relative">Hot Pizza</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                quam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="button">VIEW FULL MENU</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container d-flex align-items-center">
+        <div class="image w-50">
+          <img src="images/about.png" alt="About Image" />
+        </div>
+
+        <div class="about-cont w-50 p-4 d-flex flex-column gap-5">
+          <div class="sec-titles">
+            <h3>About Us</h3>
+
+            <h1>WE MAKE THE BEST FOOD IN YOUR TOWN</h1>
+          </div>
+
+          <div class="text-bx">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam amet repudiandae odio nihil architecto tempora
+              dignissimos iure! Nostrum repellat deleniti esse expedita veniam
+              delectus corporis iure obcaecati? Impedit culpa recusandae alias
+              dolorem accusamus repudiandae reprehenderit error quibusdam.
+              Voluptatum, iste repellendus expedita, autem voluptatibus quam
+              impedit voluptas suscipit recusandae dolorem inventore?
+            </p>
+          </div>
+
+          <div class="features d-flex gap-4">
+            <div class="feature d-flex flex-column gap-3 align-items-center">
+              <i class="fa-solid fa-pizza-slice"></i>
+              <p>A NEW LOOK ON THE RIGHT FOOD!</p>
+            </div>
+
+            <div class="feature d-flex flex-column gap-3 align-items-center">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <p>THE USE OF NATURAL BEST QUALITY PRODUCTS</p>
+            </div>
+
+            <div class="feature d-flex flex-column gap-3 align-items-center">
+              <i class="fa-solid fa-truck-fast"></i>
+              <p>FASTEST ON YOUR DOOR STEP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Food Section  -->
+    <section class="popular-food my-5" id="items">
+      <div
+        class="popular-food-container d-flex flex-column gap-5 align-items-center m-auto position-relative"
+      >
+        <div class="sec-titles">
+          <h1>Popular Food Items</h1>
+        </div>
+
+        <div
+          class="items d-flex gap-5 flex-wrap align-items-center justify-content-center"
+        >
+          <div
+            class="item d-flex flex-column gap-4 p-4 position-relative overflow-hidden"
+          >
+            <div class="img position-relative">
+              <img src="images/hot-pizza.png" alt="Pizza" />
+            </div>
+
+            <div class="info d-flex gap-3 flex-column">
+              <div
+                class="title d-flex justify-content-between w-100 align-items-center"
+              >
+                <h2>Hot Pizza</h2>
+
+                <button>
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="text-bx">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro, rerum....
+                </p>
+              </div>
+
+              <div class="cart-bx d-flex justify-content-between">
+                <h3 class="price">$50.35</h3>
+
+                <button class="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column gap-3 p-4 position-relative overflow-hidden"
+          >
+            <div class="img position-relative">
+              <img src="images/chicken.png" alt="Chicken" />
+            </div>
+
+            <div class="info d-flex gap-3 flex-column">
+              <div
+                class="title d-flex justify-content-between w-100 align-items-center"
+              >
+                <h2>Chicken Nuggets</h2>
+
+                <button>
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="text-bx">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro, rerum....
+                </p>
+              </div>
+
+              <div class="cart-bx d-flex justify-content-between">
+                <h3 class="price">$12.43</h3>
+
+                <button class="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column gap-3 p-4 position-relative overflow-hidden"
+          >
+            <div class="img position-relative">
+              <img src="images/whopper.png" alt="Whopper Burger" />
+            </div>
+
+            <div class="info d-flex gap-3 flex-column">
+              <div
+                class="title d-flex justify-content-between w-100 align-items-center"
+              >
+                <h2>Whopper Burger</h2>
+
+                <button>
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="text-bx">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro, rerum....
+                </p>
+              </div>
+
+              <div class="cart-bx d-flex justify-content-between">
+                <h3 class="price">$10.95</h3>
+
+                <button class="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column gap-3 p-4 position-relative overflow-hidden"
+          >
+            <div class="img position-relative">
+              <img src="images/panne.png" alt="Panne" />
+            </div>
+
+            <div class="info d-flex gap-3 flex-column">
+              <div
+                class="title d-flex justify-content-between w-100 align-items-center"
+              >
+                <h2>Penne Funghi Chicken</h2>
+
+                <button>
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="text-bx">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro, rerum....
+                </p>
+              </div>
+
+              <div class="cart-bx d-flex justify-content-between">
+                <h3 class="price">$20.95</h3>
+
+                <button class="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column gap-3 p-4 position-relative overflow-hidden"
+          >
+            <div class="img position-relative">
+              <img src="images/supereme-pizza.png" alt="Supereme Pizza" />
+            </div>
+
+            <div class="info d-flex gap-3 flex-column">
+              <div
+                class="title d-flex justify-content-between w-100 align-items-center"
+              >
+                <h2>Supreme Pizza</h2>
+
+                <button>
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="text-bx">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro, rerum....
+                </p>
+              </div>
+
+              <div class="cart-bx d-flex justify-content-between">
+                <h3 class="price">$32.95</h3>
+
+                <button class="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="item d-flex flex-column gap-3 p-4 position-relative overflow-hidden"
+          >
+            <div class="img position-relative">
+              <img src="images/grilled-chiken.png" alt="Grilled Chicken" />
+            </div>
+
+            <div class="info d-flex gap-3 flex-column">
+              <div
+                class="title d-flex justify-content-between w-100 align-items-center"
+              >
+                <h2>Grilled Chicken</h2>
+
+                <button>
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="text-bx">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro, rerum....
+                </p>
+              </div>
+
+              <div class="cart-bx d-flex justify-content-between">
+                <h3 class="price">$10.95</h3>
+
+                <button class="button">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-burger position-absolute">
+          <img src="images/bg-burger.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section-->
+    <section class="banner">
+      <div class="banner-container">
+        <video autoplay loop muted plays-inline class="w-100">
+          <source src="images/vd-banner.mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- download menu -->
+    <section class="download-menu mt-5">
+      <div
+        class="download-m-container d-flex flex-wrap justify-content-between align-items-center gap-3 m-auto py-5"
+      >
+        <h1>DOWNLOAD OUR MENU</h1>
+
+        <a href="#" class="button"> DOWNLOAD </a>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <div class="container-fluid contact m-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
+            <div>
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis ullam doloremque enim deserunt incidunt.
+              </p>
+              <div class="d-flex">
+                <!-- <a href="">   <i class="fab fa-instagram icon"></i></a>
+                        <a href="">            <i class="fab fa-facebook-f icon" aria-hidden="true"></i></a>
+            <a href="">              <i class="fab fa-twitter icon" aria-hidden="true"></i></a>
+            -->
+                <a href="#" class="button mt-3">Sharing is caring</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mt-4">
+            <h4>Open Hours</h4>
+            <div class="dayBox">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-5">
+                  <p>Monday</p>
+                </div>
+                <div class="col-7">
+                  <p>10am - 7pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="dayBox">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-5">
+                  <p>Tuesday</p>
+                </div>
+                <div class="col-7">
+                  <p>Closed</p>
+                </div>
+              </div>
+            </div>
+            <div class="dayBox">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-5">
+                  <p>Wed-Fri</p>
+                </div>
+                <div class="col-7">
+                  <p>10am - 7pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="dayBox">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-5">
+                  <p>Saturday</p>
+                </div>
+
+                <div class="col-7">
+                  <p>8am - 7pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="dayBox">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-5">
+                  <p>Sunday</p>
+                </div>
+                <div class="col-7">
+                  <p>10am - 7pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 info mt-4">
+            <h4>contact us</h4>
+
+            <div class="row">
+              <h5>Address:</h5>
+              <div class="col-lg-10">
+                <p>34 Street Name, City Name Here, United States</p>
+              </div>
+              <!--<h5>Email:</h5>
+                    <div class="col-lg-10">
+                      <p>info@yourdomain.com</p>
+                    </div>
+                   
+                    <h5>Phone:</h5>
+                    <div class="col-lg-10">
+                      <p>+1 242 4942 290</p>
+                    </div>-->
+              <div class="mt-3 w-auto">
+                <a href="" class="button">ADI Talk </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-1 col-md-6 col-sm-6 col-12 info mt-4">
+            <div class="row">
+              <div class="col-lg-10">
+                <img
+                  src="https://asiadoit.com/transport/qrcode/profileQR/19.png"
+                  style="width: 145px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact details for mobile -->
+    <div class="container-fluid mobilecontact">
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-item" id="box1">
+            <a href="#box1" class="accordion-link">
+              <p>About</p>
+              <i class="fas fa-plus ion-add"></i>
+              <i class="fas fa-minus ion-remove"></i>
+            </a>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis ullam doloremque enim deserunt incidunt.
+              </p>
+              <a href="#" class="btn btn-info">Sharing is caring</a>
+            </div>
+          </div>
+          <div class="accordion-item" id="box2">
+            <a href="#box2" class="accordion-link">
+              <p>Open Hours</p>
+              <i class="fas fa-plus ion-add"></i>
+              <i class="fas fa-minus ion-remove"></i>
+            </a>
+            <div class="content">
+              <div class="dayBox">
+                <div class="row">
+                  <div class="col-md-2 col-4">
+                    <p>Monday</p>
+                  </div>
+                  <div class="col-7">
+                    <p>10am - 7pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dayBox">
+                <div class="row">
+                  <div class="col-md-2 col-4">
+                    <p>Tuesday</p>
+                  </div>
+                  <div class="col-7">
+                    <p>Closed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dayBox">
+                <div class="row">
+                  <div class="col-md-2 col-4">
+                    <p>Wed-Fri</p>
+                  </div>
+                  <div class="col-7">
+                    <p>10am - 7pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dayBox">
+                <div class="row">
+                  <div class="col-md-2 col-4">
+                    <p>Saturday</p>
+                  </div>
+
+                  <div class="col-7">
+                    <p>8am - 7pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dayBox">
+                <div class="row">
+                  <div class="col-md-2 col-4">
+                    <p>Sunday</p>
+                  </div>
+                  <div class="col-7">
+                    <p>10am - 7pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="box3">
+            <a href="#box3" class="accordion-link">
+              <p>Contact Info</p>
+              <i class="fas fa-plus ion-add"></i>
+              <i class="fas fa-minus ion-remove"></i>
+            </a>
+            <div class="content">
+              <div class="row">
+                <h5 class="mt-2">Address:</h5>
+
+                <div class="col-lg-10 col-10">
+                  <p>34 Street Name, City Name Here, United States</p>
+                </div>
+                <div class="col-lg-10 col-10">
+                  <a href=""
+                    ><img
+                      src="https://asiadoit.com/transport/img/adi-talk-chat.png"
+                      style="width: 70px; margin: 5px 10px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="box4">
+            <a href="#box4" class="accordion-link">
+              <p>QR Code</p>
+              <i class="fas fa-plus ion-add"></i>
+              <i class="fas fa-minus ion-remove"></i>
+            </a>
+            <div class="content">
+              <div class="col-lg-10">
+                <img
+                  src="https://asiadoit.com/transport/qrcode/profileQR/19.png"
+                  style="width: 100px; margin: 5px 10px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer pb-3" id="contact">
+      <div class="container">
+        <div class="row">
+          <p class="footerp col-lg-6 col-md-6 col-6">© All Rights Reserved</p>
+          <p class="col-lg-6 col-md-6 col-6">
+            <a href="">Powered by ADI.one</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
